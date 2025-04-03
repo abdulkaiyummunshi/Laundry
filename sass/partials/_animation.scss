@@ -1,0 +1,150 @@
+/* Animation for SlideDown */
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Animation for play button */
+@keyframes playButtonAnimation {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        border-color: white;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    }
+    25% {
+        transform: translate(-50%, -50%) scale(1.1);
+        border-color: #ff5733;
+        box-shadow: 0 0 15px rgba(255, 87, 51, 0.8);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1);
+        border-color: white;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    }
+    75% {
+        transform: translate(-50%, -50%) scale(1.1);
+        border-color: #ff5733;
+        box-shadow: 0 0 15px rgba(255, 87, 51, 0.8);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        border-color: white;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    }
+}
+
+/* Animation for Tada */
+@keyframes tada {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    10%, 20% {
+        -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+        transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+    }
+    30%, 50%, 70%, 90% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    }
+    40%, 60%, 80% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    }
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+/* Animation for Circle */
+@keyframes rotateCircle {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+/* Animation for Moving text */
+@keyframes moveText {
+    0% {
+        transform: translateX(-20px);
+    }
+    50% {
+        transform: translateX(20px);
+    }
+    100% {
+        transform: translateX(-20px);
+    }
+}
+
+/* Pulsing Animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.8);
+        opacity: 0;
+    }
+}
+
+
+// Text
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+//Text Slide
+@keyframes marquee-scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+
+
+@keyframes img-anim-top {
+    0% {
+        transform: translateY(-5%);
+        clip-path: inset(0 0 100% 0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        clip-path: inset(0 0 0 0);
+        opacity: 1;
+    }
+}
+
+
+// Marquee
+@keyframes Scroll {
+  0% {
+    transform: translateX(-50vw);
+    transform: translateX(-50vw);
+  }
+  100% {
+    transform: translateX(50vw);
+    transform: translateX(50vw);
+  }
+
+}

@@ -1,0 +1,129 @@
+.faq_section_area{
+    .faq_section_wrapper{
+        @include flex(row, center, center);
+        flex-wrap: wrap;
+        @include md{
+            justify-content: center !important;
+            gap: 50px;
+            .col-lg-4{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+            .col-lg-8{
+                width: 100%;
+            }
+        }
+        .faq_card_wrapper{
+
+           max-width: 570px;
+           width: 100%;
+            height: 741px;
+            @include sm{
+                height: 500px;
+                padding: 35px 30px;
+            }
+            @include nesthub{
+                padding: 35px 20px;
+            }
+            background: #ecf2fe;
+            padding: 50px;
+            @include flex(column, space-between, flex-start);
+            h2{
+                font-family: $--font-family;
+                font-weight: 600;
+                font-size: 120px;
+                @include sm{
+                    font-size: 80px;
+                }
+                @include nesthub{
+                    font-size: 80px;
+                }
+                line-height: 53%;
+                letter-spacing: -0.02em;
+                color: $--text-clr;
+            }
+            .faq_btn_area{
+                h4{
+                    font-family: $--font-family;
+                    font-weight: 600;
+                    font-size: 30px;
+                    letter-spacing: -0.02em;
+                    color: $--text-clr;
+                }
+                .faq_btn{
+                    padding-top: 34px;
+                    width: 100%;
+                    .btn_wrapper_area{
+                        width: 298px;
+                    }
+                }
+            }
+        }
+        
+
+.faq_section {
+    padding-left: 60px;
+
+    @include md{ 
+        padding-left: 0px;
+        padding: 0px 30px;
+    }
+    @include sm{
+        padding-left: 0px;
+    }
+    .faq {
+        border-bottom: 1px solid $--border_bl;
+        padding: 15px 0;
+        padding: 36px 10px;
+        &.active{
+            max-height: 600px;
+        }
+        .question {
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            @include flex(row, space-between, center);
+            font-family: $--font-family;
+            font-weight: 500;
+            font-size: 20px;
+            color: #142137;
+        }
+        .answer {
+             max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-in-out;
+            @include sm{
+                padding-right: 0;
+            }
+             transition: all 0.3s ease-in-out; 
+             p{
+            font-family: $--font-family;
+            padding-top: 34px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 162%;
+            color: #142137b3;
+            @include tow12min{
+                padding-right: 100px;
+            }
+            @include sm{
+                padding-right: 10px;
+            }
+             }
+        }
+
+        .icon {
+            font-size: 20px;
+            font-weight: bold;
+            width: 40px;
+            height: 40px;
+            display: block;
+        }
+        
+    }
+}
+
+
+    }
+}

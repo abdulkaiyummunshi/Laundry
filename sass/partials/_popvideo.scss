@@ -1,0 +1,49 @@
+  /* Video Modal start*/
+    .video-modal {
+    @include flex(row, center, center);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out, visibility 0.4s;
+    &.active {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+.modal-content {
+    position: relative;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: fit-content;
+    max-width: 90%;
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.2);
+    transform: translateY(-20px);
+    transition: transform 0.4s ease-in-out;
+    .close-btn {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    font-size: 24px;
+    color: white;
+    background: red;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+/* Video Modal start*/
+}
+&.active .modal-content {
+    transform: translateY(0);
+}
+}

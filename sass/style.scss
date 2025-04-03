@@ -1,0 +1,67 @@
+@import "mixin";
+@import "variables";
+@import "./partials/animation";
+@import "./pages/home_one.scss";
+@import "./pages/home_two.scss";
+@import "./partials/header";
+@import "./partials/menu-sidebar";
+@import "./partials/popvideo";
+@import "./partials/heading";
+@import "./partials/button";
+@import "./partials/footer";
+@import "./pages/about_page.scss";
+@import "./partials/faq";
+@import "./pages/blog.scss";
+@import "./partials/comment";
+@import "./pages/principle.scss";
+@import "./pages/error.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+h3{
+    font-family: $--font-family;
+font-weight: 600;
+font-size: 30px;
+letter-spacing: -0.02em;
+text-align: center;
+color: #142137;
+}
+// p{
+//     font-family: $--font-family;
+// font-weight: 500;
+// font-size: 16px;
+// line-height: 162%;
+// color: rgba(20, 33, 55, 0.6);
+// }
+ul,
+ol {
+    list-style-type: none;
+}
+.text-right{
+    text-align: right !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+// p{
+//     font-family: $--second-family;
+//     font-weight: 400;
+//     font-size: 16px;
+//     line-height: 162%;
+//     color: $--eight;
+// }
+
+
+
