@@ -1,0 +1,187 @@
+.order_tracking_area{
+    font-family: $--font-family;
+    @include sm{
+        .row{
+            gap: 30px;
+            
+        }
+    }
+    @include md{
+        .row{
+            gap: 40px;
+
+        }
+    }
+    .order_form_area{
+        padding-right: 100px;
+        border-right: 1px solid rgba(20, 33, 55, 0.12);
+        @include sm{
+            padding-right: 40px;
+        }
+        @include sm{
+            padding-right: 0px !important;
+            border-right: 1px solid transparent;
+        }
+        input{
+            padding: 20px 30px;
+            @include sm{
+                padding: 15px 20px;
+            }
+            background: #ebeff3;
+            width: 100%;
+            // max-width: 650px;
+            @include border-radius(100px);
+            border: none;
+            outline: none;
+            margin-bottom: 24px;
+        }
+        
+    }
+    .heading_area {
+        @include nesthub{
+            padding-left: 40px !important;
+        }
+        @include sm{
+            padding-left: 0px !important;
+        }
+    }
+    .checkbox_forget_btn{
+        // max-width: 650px;
+        @include flex(row, space-between, center);
+        flex-wrap: wrap;
+        input{
+            display: inline !important;
+            width: fit-content;
+        }
+        .checkbox{
+            label{
+                font-weight: 400;
+                font-size: 16px;
+                color: rgba(20, 33, 55, 0.7);
+            }
+        }
+        .forget{
+            a{
+                font-weight: 400;
+                font-size: 16px;
+                @include transition(0.4s);
+                color: rgba(20, 33, 55, 0.7);
+                
+                &:hover{
+                    color: $--primary;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .login_with_social{
+        h4{
+            font-weight: 400;
+            font-size: 15px;
+            color: rgba(18, 18, 18, 0.7);
+            text-align: center;
+            position: relative;
+            &::after{
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 0px;
+                @include transformY(-50%);
+                width: 30%;
+                height: 1px;
+                background-color: #ebeff3;
+                @include nesthub{
+                    width: 20%;
+                }
+                @include md{
+                    width: 10%;
+                }
+                @include sm{
+                    width: 10%;
+                }
+                
+            }
+            &::before{
+                content: "";
+                position: absolute;
+                top: 50%;
+                right: 0px;
+                @include transformY(-50%);
+                width: 30%;
+                height: 1px;
+                background-color: #ebeff3;
+                @include nesthub{
+                    width: 20%;
+                }
+                @include md{
+                    width: 10%;
+                }
+                @include sm{
+                    width: 10%;
+                }
+                
+            }
+        }
+        .google_facebook{
+            width: 100%;
+            @include flex(row, space-between, center);
+            flex-wrap: wrap;
+            // @include sm{
+            //     gap: 24px;
+            // }
+            @include sm{
+                gap: 20px;
+            }
+            a{
+                // padding: 10px 20px;
+                text-align: center;
+                @include border-radius(50px);
+                border: 1.50px solid rgba(20, 33, 55, 0.1);
+                width: 100%;
+                max-width: 315px;
+                height: 54px;
+                line-height: 54px;
+                font-weight: 500;
+                font-size: 16px;
+                @include transition(0.4s);
+                color: #142137;
+                span{
+                    margin-right: 8px;
+                    width: 28px;
+                    height: 28px;
+                    
+                    
+                }
+                &:nth-child(2){
+                    span{
+                        display: inline-block;
+                    background-color: #4375e7;
+                    line-height: 28px;
+                    @include border-radius(50%);
+                    color: $--white;
+                    }
+                }
+                &:hover{
+                    color: $--primary;
+                }
+            }
+        }
+    }
+    .discount_area{
+        .dicount_price{
+            @include flex(row, space-between, center);
+            background-color: #ebeff3;
+            height: 80px;
+            padding: 0px 20px;
+            &.style_1{
+                border-top: 1px dashed rgba(20, 33, 55, 0.12);
+                // clip-path: polygon(10px 0%, 100% 0%, 100% 100%, 10px 100%, 0% 90%, 0% 10%);
+            }
+            span{
+                font-weight: 400;
+                font-size: 16px;
+                color: rgba(20, 33, 55, 0.7);
+            }
+        }
+    }
+}

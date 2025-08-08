@@ -1,0 +1,197 @@
+/*----------------------------------------*/
+/*  17. TEAM AREA START
+/*----------------------------------------*/
+
+.team_details_area{
+    P{
+                font-family: $--font-family;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 162%;
+                color: #142137b3;
+            }
+    .team_details_wrapper{
+        @include flex(row, space-between, center);
+        flex-wrap: wrap;
+        .team_details_image{
+            max-width: 690px;
+            height: 420px;
+            width: 100%;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .meta_area{
+            border-bottom: 1px solid $--border;
+            .meta_para{
+                P{
+                font-family: $--font-family;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 162%;
+                color: #142137b3;
+            }
+            }
+        }
+        .team_contact_area{
+            ul{
+                padding: 0;
+                @include flex(column, center, flex-start);
+                gap: 6px;
+                li{
+                    font-family: $--font-family;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 162%;
+                    color: #142137b3;
+                    span{
+                        color: $--text_clr;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+.team_meta_name{
+    h4{
+        font-family: $--font-family;
+        font-weight: 600;
+        font-size: 34px;
+        letter-spacing: -0.02em;
+        color: $--text_clr;
+    }
+    p{
+        font-family: $--font-family;
+        font-weight: 400;
+        font-size: 16px;
+        color: #142137b3;
+    }
+}
+
+ .blog_social_wrapper{
+                    @include flex(row, flex-start, center);
+                    gap: 12px;
+                    &.style_1{
+                        gap: 20px;
+                        a{
+                            @include border-radius(0px);
+                        }
+                    }
+                    h4{
+                        font-family: $--font-family;
+                        font-weight: 500;
+                        font-size: 24px;
+                        line-height: 142%;
+                        letter-spacing: -0.02em;
+                        color: $--text-clr;
+                    }
+                    ul{
+                        padding: 0;
+                        margin: 0;
+                        @include flex(row, flex-start, center);
+                        gap: 6px;
+                        li{
+                            a{
+                                width: 40px;
+                                height: 40px;
+                                display: block;
+                                line-height: 40px;
+                                text-align: center;
+                                @include border-radius(50%);
+                                background-color: $--primary;
+                                color: $--white; color: $--white;
+                                @include transition(0.4s);
+                                &:hover{
+                                    background-color: $--border_bl;
+                                    color: $--text-clr;
+                                }
+                            }
+                            &:nth-child(2){
+                                   a{
+                                     background-color: $--text-clr;
+                                    color: $--white;
+                                    &:hover{
+                                    background-color: $--border_bl;
+                                    color: $--text-clr;
+                                }
+                                   }
+                                }
+                            &:nth-child(4){
+                                   a{
+                                     background-color: #cb2027;;
+                                    color: $--white;
+                                    &:hover{
+                                    background-color: $--border_bl;
+                                    color: $--text-clr;
+                                }
+                                   }
+                                }
+                        }
+                    }
+                }
+
+.skills_area{
+    p{
+        font-family: $--font-family;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 162%;
+        color: #142137b3;
+    }
+    .skills_wrapper{
+        @include flex(row, space-between, center);
+        flex-wrap: wrap;
+        gap: 30px;
+        .skill_img{
+            max-width: 690px;
+            height: 370px;
+            width: 100%;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+       .progressbar_area{
+            @include flex(column, flex-start, flex-start);
+            width: 100%;
+        }
+        .progress-container {
+            width: 100%;
+        .progress-label {
+            display: flex;
+            justify-content: space-between;
+            font-size: 16px;
+            font-weight: bold;
+            span{
+                font-family: $--font-family;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 162%;
+                color: $--text_clr;
+                        
+            }
+        }
+        .progress-bar {
+            width: 100%;
+            height: 5px;
+            background: $--one;
+            // border-radius: 4px;
+            overflow: hidden;
+            position: relative;
+        .progress-fill {
+            height: 100%;
+            width: 0;
+            background: $--primary;
+            position: absolute;
+            top: 0;
+            left: 0;
+            // border-radius: 4px;
+        }
+        }
+        }
+}

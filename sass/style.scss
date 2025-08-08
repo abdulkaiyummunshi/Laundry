@@ -1,0 +1,67 @@
+/*-----------------------------------------------------------------------------------
+
+  Theme Name:Laundry & Dry Cleaning Services | Quick & Affordable
+  Author: SoftCrafty
+  Support: gosoftcrafty@gmail.com
+  Description: 
+  Version: 1.0
+
+-----------------------------------------------------------------------------------
+
+/************ TABLE OF CONTENTS ***************
+
+  01. TYPOGRAPHY CSS START
+  02. MIXIN DECLARARION
+  03. VARIBALES DECLARARION
+  04. HOME ONE CSS START 
+  05. HOME TWO CSS START
+  06. HEADING CSS START 
+  07. BUTTON CSS START
+  08. FOOTER CSS START
+  09. ABOUT CSS START
+  10. FAQ CSS START
+  11. BLOG CSS START
+  12. COMMENT CSS START
+  13. PRINCIPLES CSS START
+  14. ERROR CSS START
+  15. BACK TOP CSS START
+  16. PRELOADER CSS START
+  17. TEAM CSS START
+  18. HEADER CSS START
+  19. OFF CANVAS CSS START
+  20. MOBILE MENU CSS START
+  21. ANIMATION CSS START
+  
+
+**********************************************/
+
+
+
+@import "./mixin";
+@import "./variables";
+@import "./pages/home_one.scss";
+@import "./pages/home_two.scss";
+@import "./partials/heading";
+@import "./partials/button";
+@import "./partials/footer";
+@import "./pages/about_page.scss";
+@import "./partials/faq";
+@import "./pages/blog.scss";
+@import "./partials/comment";
+@import "./pages/principle.scss";
+@import "./pages/error.scss";
+@import "./partials/back_top";
+@import "./partials/preloader";
+@import "./pages/team.scss";
+@import "./partials/header";
+@import "./partials/offcanvas";
+@import "./partials/mobile-menu";
+@import "./partials/animation";
+@import "./pages/order.scss";
+@import "./pages/invoice.scss";
+@import "./pages/account.scss";
+@import "./pages/payment.scss";
+@import "./pages/password.scss";
+
+
+

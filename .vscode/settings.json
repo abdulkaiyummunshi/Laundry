@@ -1,0 +1,40 @@
+{
+  "files.autoSave": "afterDelay",
+  "liveServer.settings.ChromeDebuggingAttachment": false,
+  "json.schemas": [],
+  "liveSassCompile.settings.generateMap": true,
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/css"
+    }
+  ],
+  "liveSassCompile.settings.autoprefix": true,
+  "liveSassCompile.settings.includeItems": [
+    "sass/style.scss"
+  ],
+  "liveSassCompile.settings.excludeList": [
+    "**/node_modules/**",
+    "sass/**/_*.scss"
+  ],
+  "editor.stickyScroll.enabled": false,
+  "editor.wordWrap": "on",
+  "editor.fontSize": 16,
+  "[scss]": {
+    "editor.suggest.insertMode": "replace"
+  },
+  "window.customTitleBarVisibility": "windowed",
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "explorer.confirmPasteNative": false,
+  "explorer.confirmDelete": false,
+  "liveSassCompile.settings.forceBaseDirectory": "",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "liveServer.settings.port": 5501
+}

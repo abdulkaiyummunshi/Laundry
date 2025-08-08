@@ -1,0 +1,63 @@
+
+/*----------------------------------------*/
+/*  03. VARIBALES DECLARARION
+/*----------------------------------------*/
+
+  $--font-family: "Poppins", sans-serif;
+  $--second-family: "Urbanist", sans-serif;
+  $--third-family: "Space Grotesk", sans-serif;
+
+ 
+  $--primary:#4375e7;
+  $--white: #fff;
+  $--black: #181616;
+  $--secondary: #ffb100;
+  $--text_clr: #142137;
+  $--text2: #ffffffb3;
+  $--border: #d9dbdf;
+  $--border_bl: #14213724;
+
+
+  
+// $--white: #fff;
+$--nine: #1a1a1a;
+$--eight: #6a6a6a;
+$--seven: #252525;
+$--tow: #ccc;
+$--one: #f2f2f2;
+
+$--font3: "Font Awesome 6 Brands", sans-serif;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+h3{
+font-family: "Poppins", sans-serif;
+font-weight: 600;
+font-size: 30px;
+letter-spacing: -0.02em;
+text-align: center;
+color: #142137;
+}
+ul,
+ol {
+    list-style-type: none;
+}
+.text-right{
+    text-align: right !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}

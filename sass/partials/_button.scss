@@ -1,0 +1,549 @@
+/*----------------------------------------*/
+/*  07. BUTTON CSS START
+/*----------------------------------------*/
+
+.btn_wrapper_area{
+    text-align: center;
+    line-height: 54px;
+    border: 1px solid transparent;
+    @include transition(0.4s);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    cursor: pointer;
+    a{
+        padding: 0px 34px;
+        line-height: 54px;
+        display: block;
+    }
+    
+                  &::after{
+            content: "";
+            width: 100%;
+            height: 200px;
+            position: absolute;
+            top: -70px;
+            left: -60px;
+            background-color: $--primary;
+            @include transition(1.2s);
+            z-index: -1;
+            transform: rotate(-20deg);
+            -webkit-transform: rotate(-20deg);
+            -moz-transform: rotate(-20deg);
+            -ms-transform: rotate(-20deg);
+            -o-transform: rotate(-20deg);
+}
+        &::before{
+            content: "";
+            width: 100%;
+            height: 200px;
+            position: absolute;
+            top: -80px;
+            right: -60px;
+            background-color: $--primary;
+            @include transition(1.2s);
+            z-index: -1;
+            transform: rotate(-20deg);
+            -webkit-transform: rotate(-20deg);
+            -moz-transform: rotate(-20deg);
+            -ms-transform: rotate(-20deg);
+            -o-transform: rotate(-20deg);
+        }
+        &:hover{
+            background-color: $--text-clr;
+            &::after{
+                width: 0%;
+                
+            }
+            &::before{
+                width: 0%;
+
+            }
+
+        }
+    &.style_1{
+        font-family: $--font-family;
+        font-weight: 500;
+        font-size: 15px;
+        color: $--text_clr;
+        background-color: transparent;
+        border: 1px solid $--border;
+        @include transition(0.7s);
+        position: relative;
+        overflow: hidden;
+        &::after{
+            content: "";
+            width: 0%;
+            height: 200px;
+            position: absolute;
+            top: -70px;
+            left: -60px;
+            background-color: $--primary;
+            @include transition(1.2s);
+            z-index: -1;
+            transform: rotate(-20deg);
+            -webkit-transform: rotate(-20deg);
+            -moz-transform: rotate(-20deg);
+            -ms-transform: rotate(-20deg);
+            -o-transform: rotate(-20deg);
+}
+        &::before{
+            content: "";
+            width: 0%;
+            height: 200px;
+            position: absolute;
+            top: -80px;
+            right: -60px;
+            background-color: $--primary;
+            @include transition(1.2s);
+            z-index: -1;
+            transform: rotate(-20deg);
+            -webkit-transform: rotate(-20deg);
+            -moz-transform: rotate(-20deg);
+            -ms-transform: rotate(-20deg);
+            -o-transform: rotate(-20deg);
+        }
+        &:hover{
+            &::after{
+                width: 250px;
+
+            }
+            &::before{
+                width: 250px;
+
+            }
+
+
+            a{
+                color: $--white;
+                span{
+           i{
+             transform:rotate(0deg);
+             -webkit-transform:rotate(0deg);
+             -moz-transform:rotate(0deg);
+             -ms-transform:rotate(0deg);
+             -o-transform:rotate(0deg);
+}
+}
+            }
+        }
+        a{
+            
+            @include transition(0.9s);
+            font-family: $--font-family;
+        font-weight: 500;
+        font-size: 15px;
+        color: $--text_clr;
+        span{
+           i{
+             @include transition(0.6s);
+           }
+        }
+        }
+    }
+    &.style_2{
+        // padding: 0px 24px;
+        a{
+            padding: 0px 24px;
+        }
+        @include border-radius(100px);
+        background-color: $--white !important;
+        position: relative;
+        overflow: hidden;
+        @include transition(0.9s);
+        z-index: 1;
+        &::before{
+            content: "";
+            width: 0%;
+            height: 200px;
+            position: absolute;
+            top: -80px;
+            right: -60px;
+            background-color: $--text-clr;
+            @include transition(1.2s);
+            z-index: -1;
+            transform: rotate(-20deg);
+            -webkit-transform: rotate(-20deg);
+            -moz-transform: rotate(-20deg);
+            -ms-transform: rotate(-20deg);
+            -o-transform: rotate(-20deg);
+        }
+         &::after{
+            content: "";
+            width: 0%;
+            height: 200px;
+            position: absolute;
+            top: -70px;
+            left: -60px;
+            background-color: $--text-clr ;
+            @include transition(1.2s);
+            z-index: -1;
+            transform: rotate(-20deg);
+            -webkit-transform: rotate(-20deg);
+            -moz-transform: rotate(-20deg);
+            -ms-transform: rotate(-20deg);
+            -o-transform: rotate(-20deg);
+}
+        &:hover{
+            &::after{
+                width: 100%;
+
+            }
+            &::before{
+                width: 100%;
+
+            }
+            a{
+                color: $--white;
+            }
+
+        }
+        a{
+            color: $--text_clr;
+            @include transition(0.6s);
+        }
+        span{
+            margin-right: 5px;
+            i{
+                transform: rotate(0deg);
+                -webkit-transform: rotate(0deg);
+                -moz-transform: rotate(0deg);
+                -ms-transform: rotate(0deg);
+                -o-transform: rotate(0deg);
+}
+        }
+    }
+    &.style_3{
+    padding: 0px;
+        a{
+            padding: 0px;
+            
+        padding-left: 30px;
+        padding-right: 10px;
+        }
+        @include border-radius(50px);
+        background-color: $--text-clr;
+        border: 1px solid transparent;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        @include transition(0.6s);
+        &:hover{
+            background-color: $--white;
+            @include transition(0.3s);
+            border: 1px solid $--border_bl;
+            a{
+                color: $--text-clr;
+                @include transition(0.3s);
+                span{
+                    @include transition(0.3s);
+                    background-color: $--text-clr;
+                    color: $--white;
+                    i{
+                        @include transition(0.3s);
+                        transform: rotate(0deg);
+                        -webkit-transform: rotate(0deg);
+                        -moz-transform: rotate(0deg);
+                        -ms-transform: rotate(0deg);
+                        -o-transform: rotate(0deg);
+}
+                }
+
+            }
+        }
+
+                  &::after{
+            content: "";
+            width: 100%;
+            height: 200px;
+            position: absolute;
+            top: -70px;
+            left: -60px;
+            background-color: $--text-clr;
+            @include transition(1.2s);
+            z-index: -1;
+            transform: rotate(-20deg);
+            -webkit-transform: rotate(-20deg);
+            -moz-transform: rotate(-20deg);
+            -ms-transform: rotate(-20deg);
+            -o-transform: rotate(-20deg);
+}
+        &::before{
+            content: "";
+            width: 100%;
+            height: 200px;
+            position: absolute;
+            top: -80px;
+            right: -60px;
+            background-color: $--text-clr;
+            @include transition(1.2s);
+            z-index: -1;
+            transform: rotate(-20deg);
+            -webkit-transform: rotate(-20deg);
+            -moz-transform: rotate(-20deg);
+            -ms-transform: rotate(-20deg);
+            -o-transform: rotate(-20deg);
+        }
+        &:hover{
+            
+            &::after{
+                width: 0%;
+                
+            }
+            &::before{
+                width: 0%;
+
+            }
+
+        }
+         a{
+            @include flex(row, space-between, center);
+            gap: 10px;
+            span{
+                        border-radius: 50px;
+                        width: 34px;
+                        height: 34px;
+                        background-color: $--white;
+                       display: block;
+                       color: $--text-clr;
+                       line-height: 34px;
+                       text-align: center;
+                       i{
+                        transform: rotate(-45deg);
+                        -webkit-transform: rotate(-45deg);
+                        -moz-transform: rotate(-45deg);
+                        -ms-transform: rotate(-45deg);
+                        -o-transform: rotate(-45deg);
+}
+                    }
+         }
+    }
+    &.style_4{
+        padding: 0px;
+        a{
+            padding: 0px;
+        padding-left: 30px;
+        padding-right: 10px;
+        }
+        @include border-radius(50px);
+        border: 1px solid $--border_bl;
+        background-color: transparent;
+        overflow: hidden;
+        z-index: 1;
+        position: relative;
+        &:hover{
+            @include transition(0.3s);
+            a{
+                color: $--white;
+                @include transition(0.3s);
+                span{
+                    @include transition(0.3s);
+                    background-color: $--white;
+                    color: $--text-clr;
+                    i{
+                        @include transition(0.3s);
+                        transform: rotate(0deg);
+                        -webkit-transform: rotate(0deg);
+                        -moz-transform: rotate(0deg);
+                        -ms-transform: rotate(0deg);
+                        -o-transform: rotate(0deg);
+}
+                }
+
+            }
+        }
+
+                  &::after{
+            content: "";
+            width: 0%;
+            height: 200px;
+            position: absolute;
+            top: -70px;
+            left: -60px;
+            background-color: $--text-clr;
+            @include transition(1.2s);
+            z-index: -1;
+            transform: rotate(-20deg);
+            -webkit-transform: rotate(-20deg);
+            -moz-transform: rotate(-20deg);
+            -ms-transform: rotate(-20deg);
+            -o-transform: rotate(-20deg);
+}
+        &::before{
+            content: "";
+            width: 0%;
+            height: 200px;
+            position: absolute;
+            top: -80px;
+            right: -60px;
+            background-color: $--text-clr;
+            @include transition(1.2s);
+            z-index: -1;
+            transform: rotate(-20deg);
+            -webkit-transform: rotate(-20deg);
+            -moz-transform: rotate(-20deg);
+            -ms-transform: rotate(-20deg);
+            -o-transform: rotate(-20deg);
+        }
+        &:hover{
+            
+            &::after{
+                width: 100%;
+                
+            }
+            &::before{
+                width: 100%;
+
+            }
+
+        }
+         a{
+            @include flex(row, space-between, center);
+            gap: 10px;
+            color: $--text-clr;
+            span{
+                 border-radius: 50px;
+                 width: 34px;
+                 height: 34px;
+                 background-color: $--text-clr;
+                   display: block;
+                   color: $--white;
+                   line-height: 34px;
+                   text-align: center;
+                   i{
+                    transform: rotate(-45deg);
+                    -webkit-transform: rotate(-45deg);
+                    -moz-transform: rotate(-45deg);
+                    -ms-transform: rotate(-45deg);
+                    -o-transform: rotate(-45deg);
+}
+                    }
+         }
+    }
+    &.style_5{
+        background-color: transparent;
+        border: 1px solid $--border;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        a{
+            color: $--text-clr;
+        }
+        &:hover{
+            border: 1px solid transparent;
+            a{
+                color: $--white;
+                span i{
+                    transition: 0.5s;
+                    transform: rotate(0deg);
+                    -webkit-transform: rotate(0deg);
+                    -moz-transform: rotate(0deg);
+                    -ms-transform: rotate(0deg);
+                    -o-transform: rotate(0deg);
+                    -webkit-transition: 0.5s;
+                    -moz-transition: 0.5s;
+                    -ms-transition: 0.5s;
+                    -o-transition: 0.5s;
+}
+            }
+            
+        }
+        
+                  &::after{
+            content: "";
+            width: 0%;
+            height: 200px;
+            position: absolute;
+            top: -70px;
+            left: -60px;
+            background-color: $--primary;
+            @include transition(1.2s);
+            z-index: -1;
+            transform: rotate(-20deg);
+            -webkit-transform: rotate(-20deg);
+            -moz-transform: rotate(-20deg);
+            -ms-transform: rotate(-20deg);
+            -o-transform: rotate(-20deg);
+}
+        &::before{
+            content: "";
+            width: 0%;
+            height: 200px;
+            position: absolute;
+            top: -80px;
+            right: -60px;
+            background-color: $--primary;
+            @include transition(1.2s);
+            z-index: -1;
+            transform: rotate(-20deg);
+            -webkit-transform: rotate(-20deg);
+            -moz-transform: rotate(-20deg);
+            -ms-transform: rotate(-20deg);
+            -o-transform: rotate(-20deg);
+        }
+        &:hover{
+            
+            &::after{
+                width: 100%;
+                
+            }
+            &::before{
+                width: 100%;
+
+            }
+
+        }
+    }
+    &.style_6{
+        background-color: $--white !important;
+        border: 1px solid transparent;
+        a{
+            // color: $--text-clr;
+            span{
+                background-color: $--text-clr;
+                color: $--white;
+            }
+        }
+    }
+    a{
+        font-family: $--font-family;
+        font-weight: 500;
+        font-size: 15px;
+        color: $--white;
+        @include transition(0.5s);
+        span{
+            margin-left: 5px;
+            @include transition(0.5s);
+           i{
+            @include transition(0.5s);
+             transform:rotate(-45deg);
+             -webkit-transform:rotate(-45deg);
+             -moz-transform:rotate(-45deg);
+             -ms-transform:rotate(-45deg);
+             -o-transform:rotate(-45deg);
+}
+}
+    }
+}
+.btn_area{
+    
+        border-radius: 50px;
+        width: 100%;
+        height: 54px;
+        background-color: $--text-clr;
+        font-family: $--font-family;
+        font-weight: 500;
+        font-size: 16px;
+        color: #fff;
+        text-align: center;
+        line-height: 54px;
+        display: block;
+        border: none;
+        &.style_1{
+            max-width: 270px;
+            @include sm{
+                max-width: 132px;
+            }
+        }
+}
+

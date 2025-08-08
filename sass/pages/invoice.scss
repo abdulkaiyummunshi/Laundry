@@ -1,0 +1,191 @@
+.laundre_invoice_area{
+    @include xs{
+      .container-xxl{
+        padding: 0px !important;
+      }
+    }
+    overflow: hidden;
+    font-family: $--font-family;
+    .heading{
+        h2{
+            font-weight: 600;
+            font-size: 54px;
+            letter-spacing: -0.02em;
+            text-align: center;
+            color: #142137;
+        }
+    }
+    .invoice_contains{
+        padding: 90px 60px;
+        overflow: hidden;
+        width: 100%;
+        @include sm{
+            padding: 20px;
+        }
+        background: #ebeff3;
+        .download_area{
+            @include flex(row, space-between, center);
+            h2{
+                font-weight: 600;
+                font-size: 34px;
+                letter-spacing: -0.02em;
+                color: #142137;
+                @include sm{
+                    font-size: 20px;
+                    text-align: left;
+                }
+            }
+            button{
+                font-weight: 500;
+                font-size: 16px;
+                color: #142137;
+                border: 1px solid rgba(20, 33, 55, 0.12);
+                border-radius: 60px;
+                width: 183px;
+                height: 54px;
+                @include sm{
+                    width: 120px;
+                    height: 35px;
+                    line-height: 35px;
+                    font-size: 14px;
+                }
+                background-color: transparent;
+            }
+        }
+        .invoice_card{
+            .invoice_details{
+                @include flex(column, center, flex-start);
+                gap: 16px;
+
+
+            }
+            height: 110px;
+            border-right: 1px solid #d9d9d9;
+            width: 100%;
+            @include sm{
+                height: fit-content !important;
+                padding: 15px 0px;
+                border: 1px solid transparent;
+            }
+            @include flex(column, center, flex-start);
+            &.style_1{
+                align-items: center;
+                @include sm{
+                    align-items: flex-start;
+                }
+            }
+            &.style_2{
+                align-items: flex-end;
+                @include sm{
+                    align-items: flex-start;
+                }
+                border-right: 1px solid transparent;
+            }
+            gap: 22px;
+            h4,h5{
+                font-weight: 500;
+                font-size: 16px;
+                @include sm{
+                    font-size: 12px;
+                }
+                color: #142137;
+            }
+            p{
+                font-weight: 400;
+                font-size: 16px;
+                @include sm{
+                    font-size: 12px;
+                }
+                color: rgba(20, 33, 55, 0.7);
+            }
+            .invoice_details_wrap{
+                p{
+                    margin-top: 10px;
+                }
+            }
+        }
+        .pricing_list_area{
+            .row{
+                @include sm{
+                    .col-lg-3{
+                        padding: 0px !important;
+                        width: 34% !important;
+                        &:nth-child(2){
+                            width: 20% !important;
+                        }
+                        &:nth-child(3){
+                            width: 30% !important;
+                        }
+                        &:nth-child(4){
+                            width: 15% !important;
+                        }
+                    }
+                }
+                &.style_1{
+                background-color: #142137;
+                padding: 23px 30px;
+                @include sm{
+                    padding: 23px 5px;
+                }
+                h4{
+                    font-weight: 500;
+                    font-size: 16px;
+                    color: #fff;
+                }
+
+            }
+            &.style_2{
+                border-bottom: 1px solid  #d9d9d9;
+                padding: 30px 10px;
+                h4{
+                    font-weight: 500;
+                    font-size: 16px;
+                    color: #142137;
+                }
+                p{
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: #142137;
+                }
+                .total_price{
+                    p{
+                        color: $--primary;
+                    }
+                }
+            }
+            }
+        }
+        .contact_info_area{
+            .contact_info{
+                width: 100%;
+                @include flex(row, center, center);
+                a{
+                    font-weight: 600;
+                    font-size: 16px;
+                    letter-spacing: -0.02em;
+                    color: rgba(20, 33, 55, 0.7);
+                    span{
+                        margin-right: 8px;
+                    }
+                }
+                &.style_1{
+                    justify-content: flex-end;
+                    @include sm{
+                        justify-content:center;
+                    }
+                }
+                &.style_2{
+                   a{
+                    color: #142137;
+                   }
+                }
+                &.style_3{
+                    justify-content: flex-start;
+                    @include sm{
+                        justify-content:center;
+                    }
+                }
+            }
+        }
+    }
+}

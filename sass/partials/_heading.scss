@@ -1,0 +1,179 @@
+/*----------------------------------------*/
+/*  06. HEADING AREA START
+/*----------------------------------------*/
+.heading_area{
+    
+    .sub_heading{
+        &.style_1{
+            h4{
+                color: #142137b3;
+                font-family: var(--font-family);
+                font-weight: 500;
+                font-size: 16px;
+                border: 1px solid #14213724;
+                line-height: 24px;
+                
+            }
+        }
+        &.style_2{
+            h4{
+                font-family: $--font-family;
+            font-weight: 500;
+            font-size: 16px;
+            color: #142137b3;
+            border: 1px solid rgba(20, 33, 55, 0.14);
+            }
+        }
+        &.style_3{
+            h4{
+                @include border-radius(50px);
+            border: 1px solid $--border;
+            padding: 0px 20px;
+            color: $--text-clr;
+            line-height: 27px;
+            }
+        }
+        &.style_4{
+            h4{
+                color: $--white;
+            }
+        }
+        h4{
+            display: inline-block;
+            backdrop-filter: blur(14px);
+            background: rgba(255, 255, 255, 0.14);
+            font-family: $--font-family;
+            font-weight: 500;
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.7);
+            padding: 0px 10px;
+            text-align: center;
+            margin-bottom: 24px;
+            height: 29px;
+            line-height: 29px;
+            span{
+                margin-right: 8px;
+            }
+        }
+    }
+    .heading{
+        @include sm{
+            width: 100%;
+            // text-align: center;
+        }
+        &.style_1{
+            h2{
+                color: $--white;
+            }
+        }
+        h1{
+        font-family: $--font-family;
+        font-weight: 600;
+        font-size: 100px;
+        line-height: 110%;
+        letter-spacing: -0.02em;
+        color: $--white;
+        @include nesthub{
+            font-size: 60px;
+        }
+        @include md{
+            font-size: 50px;
+        }
+        @include sm{
+            font-size: 35px;
+        }
+        }
+        h2{
+            font-weight: 600;
+            font-family: $--font-family;
+            font-size: 54px;
+            line-height: 119%;
+            letter-spacing: -0.02em;
+            color: $--text_clr;
+            @include nesthub{
+                font-size: 40px;
+            }
+            @include md{
+                font-size: 30px;
+            }
+            @include sm{
+                font-size: 28px;
+                width: 100%;
+            }
+            
+            br{
+                @include xxs{
+                    display: none;
+                }
+        }
+    }
+        h4{
+            font-weight: 600;
+            font-family: $--font-family;
+            font-size: 34px;
+            @include sm{
+                font-size: 24px;
+            }
+            letter-spacing: -0.02em;
+            color: #142137;
+        }
+        
+    }
+    .description{
+        &.style_2{
+            p{
+                font-weight: 400;
+            font-size: 16px;
+            line-height: 162%;
+             @include md{
+                        padding-right: 250px;
+                    }
+            }
+        }
+        &.style_1{
+                p{
+                    color: $--text2;
+                    @include md{
+                        padding-right: 250px;
+                    }
+                }
+            }
+        p{
+            font-family: $--font-family;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 167%;
+            color: rgba(20, 33, 55, 0.7);
+            margin-top: 12px;
+            
+            
+        }
+    }
+    .describtion{
+        p{
+            font-family: $--font-family;
+            font-weight: 400;
+            font-size: 16px;
+            color: rgba(20, 33, 55, 0.7);
+        }
+    }
+}
+ .heading_area_wrapper{
+        @include flex(row, space-between, flex-end);
+        
+        @include nesthub{
+            @include flex(column, center, flex-start);
+             gap: 30px;
+        }
+        @include  sm {
+            @include flex(column, center, flex-start);
+            gap: 30px;
+            .heading_area{
+                width: 100%;
+            }
+        }
+        @include  md {
+            @include flex(column, center, flex-start);
+        }
+       
+    }

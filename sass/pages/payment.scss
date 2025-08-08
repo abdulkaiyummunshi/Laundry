@@ -1,0 +1,81 @@
+.payment_info{
+    font-family: $--font-family;
+.row{
+    padding: 0px 10px;
+}
+    .heading{
+        max-width: 850px;
+        h2{
+            font-weight: 600;
+            font-size: 34px;
+            letter-spacing: -0.02em;
+            color: #142137;
+            margin-left: -15px;
+        }
+    }
+    .pay_info{
+        border: 1px solid rgba(20, 33, 55, 0.14);
+        max-width: 850px;
+        width: 100%;
+        padding: 50px 50px 60px 50px;
+        @include sm{
+            padding: 20px;
+        }
+        ul{
+            @include flex(column, center, center);
+            gap: 28px;
+            @include sm{
+                gap: 20px;
+            }
+            padding: 0px;
+            margin: 0px;
+            li{
+                @include flex(row, space-between, center);
+                width: 100%;
+                b{
+                    font-weight: 500;
+                    font-size: 16px;
+                    color: rgba(20, 33, 55, 0.7);
+                }
+                p{
+                    font-weight: 500;
+                    font-size: 15px;
+                    color: rgba(20, 33, 55, 0.7);
+                }
+            }
+        }
+        .pay_btn_area{
+            @include flex(row, space-between, center);
+            flex-wrap: wrap;
+            @include md{
+                gap: 20px;
+            }
+            @include sm{
+                gap: 20px;
+            }
+            button{
+                width: 360px;
+                @media (min-width: 769px) and (max-width: 997px){
+                    width: calc(50% - 10px);
+                }
+                // @include md{
+                //     width: 310px;
+                // }
+                @include sm{
+                    width: 100% !important;
+                }
+                height: 46px;
+                text-align: center;
+                line-height: 46px;
+                border: 1px solid rgba(20, 33, 55, 0.12);
+                background-color: $--white;
+                @include transition(0.4s);
+                &:hover{
+                    color: $--white;
+                    border: 1px solid transparent;
+                    background-color: $--primary;
+                }
+            }
+        }
+    }
+}
