@@ -1,0 +1,109 @@
+
+// unit testing pages area
+.page-area{
+
+    padding-top: 115px;
+    padding-bottom: 100px;
+
+    .page-content{
+        p{
+            margin: 0 0 15px;
+            color: $text-color;
+            font-weight: 500;
+
+            a{
+                color: $gray-800;
+                &:hover{
+                    color: $primary-color;
+                }
+            }
+
+            code{
+                color: $gray-800;
+            }
+        }
+
+        ol{
+            li{
+                font-weight: 500;
+
+                a{
+                    color: $gray-800;
+
+                    &:hover{
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        table{
+            th{
+                a{
+                    color: $gray-800;
+
+                    &:hover{
+                        color: $primary-color;
+                    }
+                }
+            }
+            tr{
+                td{
+                    a{
+                        color: $gray-800;
+
+                        &:hover{
+                            color: $primary-color;
+                        }
+                    }
+                }
+            }
+        }
+        dl{
+            dd{
+                a{
+                    color: $gray-800;
+
+                    &:hover{
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+
+         .page-links{
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 10px;
+            width: 100%;
+            margin-bottom: 20px;
+            
+            .post-page-numbers{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #23262D;
+                background-color: rgba(217, 161, 76, 0.1);
+                border-radius: 50%;
+                height: 67px;
+                width: 67px;
+                transition: all 0.5s ease-out;
+                font-size: 24px;
+                font-weight: 700;
+                text-transform: capitalize;
+
+                &:hover,
+                &.current{
+                    background-color: $primary-color;
+                    color: $white;
+                }
+            }
+        }
+    }
+}

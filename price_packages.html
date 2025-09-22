@@ -271,105 +271,822 @@
   <!-- hero section end -->
   <!-- Price Packages start -->
   <section class="price_packages_area pt-150">
-      <div class="container-xxl">
-         <div class="row">
-          <div class="col">
-            <div class="heading_area text-center">
-           <div class="sub_heading style_1">
-             <h4><span>•</span>Price Packages</h4>
-           </div>
-           <div class="heading">
-             <h2>High-Quality Laundry <br> & Dry Cleaning.</h2>
-           </div>
+    <div class="container-xxl">
+        <div class="row">
+            <div class="col">
+                <div class="heading_area text-center">
+                    <div class="sub_heading style_1">
+                        <h4><span>•</span>Price Packages</h4>
+                    </div>
+                    <div class="heading">
+                        <h2>High-Quality Laundry <br> & Dry Cleaning.</h2>
+                    </div>
+                </div>
+            </div>
         </div>
-          </div>
-         </div>
-        <div class="row g-4 justify-content-center flex-wrap mt-57">
-          <div class="col-xxl-3 col-lg-4 col-md-6 col-12">
-            <div class="packages_contains">
-            <div class="packages_title_wrapper">
-              <div class="packages_title">
-                <h4>Laundry & Fold</h4>
-              <img src="./images/home1/price_packages/price1.png" alt="">
-              </div>
+        <div class="row position-relativ g-4 justify-content-center flex-wrap mt-57">
+            <div class="col-xxl-3 col-lg-4 col-md-6 col-12">
+                <div class="packages_contains package_item_content" data-bs-toggle="modal" data-bs-target="#laundryModal">
+                    <div class="packages_title_wrapper">
+                        <div class="packages_title">
+                            <h4>Laundry & Fold</h4>
+                            <img src="./images/home1/price_packages/price1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="packages_details">
+                        <ul>
+                            <li class="style_1"><span><i class="fa-solid fa-circle-check"></i></span> Prices start from $24.78 per 5kg load</li>
+                            <li class="style_1"><span><i class="fa-solid fa-circle-check"></i></span> Next day delivery available for $8</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="packages_details">
-                    <ul>
-                        <li class="style_1"><span><i class="fa-solid fa-circle-check"></i></span> Prices start from $24.78 per 5kg load</li>
-                        <li class="style_1"><span><i class="fa-solid fa-circle-check"></i></span> Next day delivery available for $8</li>
-                    </ul>
+
+            <div class="col-xxl-3 col-lg-4 col-md-6 col-12">
+                <div class="packages_contains package_item_content" data-bs-toggle="modal" data-bs-target="#dryCleaningModal">
+                    <div class="packages_title_wrapper">
+                        <div class="packages_title">
+                            <h4>Dry Cleaning</h4>
+                            <img src="./images/home1/price_packages/price2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="packages_details">
+                        <ul>
+                            <li class="style_1"><span><i class="fa-solid fa-circle-check"></i></span> Priced by the piece</li>
+                            <li class="style_1"><span><i class="fa-solid fa-circle-check"></i></span> Dresses priced from $14</li>
+                            <li class="style_1"><span><i class="fa-solid fa-circle-check"></i></span> Suits priced from $23.50</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-          </div>
-          </div>
-          <div class="col-xxl-3 col-lg-4 col-md-6 col-12">
-            <div class="packages_contains">
-            <div class="packages_title_wrapper">
-              <div class="packages_title">
-                <h4>Dry Cleaning</h4>
-              <img src="./images/home1/price_packages/price2.png" alt="">
-              </div>
+
+            <div class="col-xxl-3 col-lg-4 col-md-6 col-12">
+                <div class="packages_contains package_item_content" data-bs-toggle="modal" data-bs-target="#shirtServiceModal">
+                    <div class="packages_title_wrapper">
+                        <div class="packages_title">
+                            <h4>Shirt Service</h4>
+                            <img src="./images/home1/price_packages/price3.png" alt="">
+                        </div>
+                    </div>
+                    <div class="packages_details">
+                        <ul>
+                            <li class="style_1"><span><i class="fa-solid fa-circle-check"></i></span> Priced per piece</li>
+                            <li class="style_1"><span><i class="fa-solid fa-circle-check"></i></span> Prices start from $5 per piece</li>
+                            <li class="style_1"><span><i class="fa-solid fa-circle-check"></i></span> 5 shirts for $15 deal</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="packages_details">
-                    <ul>
-                        <li class="style_1"><span><i class="fa-solid fa-circle-check"></i></span> Priced by the piece</li>
-                        <li class="style_1"><span><i class="fa-solid fa-circle-check"></i></span> Dresses priced from $14</li>
-                        <li class="style_1"><span><i class="fa-solid fa-circle-check"></i></span> Suits priced from $23.50</li>
-                    </ul>
+
+            <div class="col-xxl-3 col-lg-4 col-md-6 col-12">
+                <div class="packages_contains package_item_content" data-bs-toggle="modal" data-bs-target="#ironingModal">
+                    <div class="packages_title_wrapper">
+                        <div class="packages_title">
+                            <h4>Ironing</h4>
+                            <img src="./images/home1/price_packages/price4.png" alt="">
+                        </div>
+                    </div>
+                    <div class="packages_details">
+                        <ul>
+                            <li class="style_1"><span><i class="fa-solid fa-circle-check"></i></span> Polo Shirt on Hanger $8</li>
+                            <li class="style_1"><span><i class="fa-solid fa-circle-check"></i></span> Bed Sheet - All Sizes $10</li>
+                            <li class="style_1"><span><i class="fa-solid fa-circle-check"></i></span> Baby clothes $4 (prices can vary)</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-          </div>
-          </div>
-          <div class="col-xxl-3 col-lg-4 col-md-6 col-12">
-            <div class="packages_contains">
-            <div class="packages_title_wrapper">
-              <div class="packages_title">
-                <h4>Shirt Service</h4>
-              <img src="./images/home1/price_packages/price3.png" alt="">
-              </div>
-            </div>
-            <div class="packages_details">
-                    <ul>
-                        <li class="style_1"><span><i class="fa-solid fa-circle-check"></i></span> Priced per piece</li>
-                        <li class="style_1"><span><i class="fa-solid fa-circle-check"></i></span> Prices start from $5 per piece</li>
-                        <li class="style_1"><span><i class="fa-solid fa-circle-check"></i></span> 5 shirts for $15 deal</li>
-                    </ul>
-            </div>
-          </div>
-          </div>
-          <div class="col-xxl-3 col-lg-4 col-md-6 col-12">
-            <div class="packages_contains">
-            <div class="packages_title_wrapper">
-              <div class="packages_title">
-                <h4>Ironing</h4>
-              <img src="./images/home1/price_packages/price4.png" alt="">
-              </div>
-            </div>
-            <div class="packages_details">
-                    <ul>
-                        <li class="style_1"><span><i class="fa-solid fa-circle-check"></i></span> Polo Shirt on Hanger $8</li>
-                        <li class="style_1"><span><i class="fa-solid fa-circle-check"></i></span> Bed Sheet - All Sizes $10</li>
-                        <li class="style_1"><span><i class="fa-solid fa-circle-check"></i></span> Baby clothes $4 (prices can vary)</li>
-                    </ul>
-            </div>
-          </div>
-          </div>
         </div>
         <div class="row">
-          <div class="col">
-            <div class="price_packages_btn_wrapper">
-          <b>Free Collection & Delivery $20 Minimum Order <br> No Service Fee.</b>
-          <div class="price_packages_btn">
-             <div class="btn_wrapper_area">
-                 <a href="contact.html">Book a Pick Up</a>
-              </div>
-             <div class="btn_wrapper_area">
-                 <a href="price_packages.html">Get a Price Estimation</a>
-              </div>
-          </div>
+            <div class="col">
+                <div class="price_packages_btn_wrapper">
+                    <b>Free Collection & Delivery $20 Minimum Order <br> No Service Fee.</b>
+                    <div class="price_packages_btn">
+                        <div class="btn_wrapper_area">
+                            <a href="contact.html">Book a Pick Up</a>
+                        </div>
+                        <div class="btn_wrapper_area">
+                            <a href="price_packages.html">Get a Price Estimation</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-          </div>
+    </div>
+</section>
+
+<div class="modal fade custom-modal-red" id="laundryModal" tabindex="-1" aria-labelledby="laundryModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content p-4">
+          <div class="modal-header">
+                <h5 class="modal-title" id="dryCleaningModalLabel">Dry Cleaning</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+           <div class="row g-4 mt-30">
+            <div class="col-lg-3">
+              <div class="product_card_order">
+                <div class="product_details">
+                  <div class="checkbox">
+                    <i class="fa-solid fa-circle-check"></i>
+                  </div>
+                  <div class="product_price">
+                    <span>$1.00 Per Item</span>
+                  </div>
+                  <div class="product_title">
+                    <h4>Shirt</h4>
+                  </div>
+                </div>
+                <div class="product_img">
+                  <img src="./images/home1/price_packages/product1.png" alt="">
+                </div>
+                <div class="counting_btn_contain">
+                  <div class="product_count_btn">
+                    <div class="dec_btn">
+                      <span><i class="fa-solid fa-minus"></i></span>
+                    </div>
+                    <input type="text" placeholder="0" value="1">
+                    <div class="inc_btn">
+                      <span><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="product_card_order">
+                <div class="product_details">
+                  <div class="checkbox">
+                    <i class="fa-solid fa-circle-check"></i>
+                  </div>
+                  <div class="product_price">
+                    <span>$1.00 Per Item</span>
+                  </div>
+                  <div class="product_title">
+                    <h4>Shirt</h4>
+                  </div>
+                </div>
+                <div class="product_img">
+                  <img src="./images/home1/price_packages/product1.png" alt="">
+                </div>
+                <div class="counting_btn_contain">
+                  <div class="product_count_btn">
+                    <div class="dec_btn">
+                      <span><i class="fa-solid fa-minus"></i></span>
+                    </div>
+                    <input type="text" placeholder="0" value="1">
+                    <div class="inc_btn">
+                      <span><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="product_card_order">
+                <div class="product_details">
+                  <div class="checkbox">
+                    <i class="fa-solid fa-circle-check"></i>
+                  </div>
+                  <div class="product_price">
+                    <span>$1.00 Per Item</span>
+                  </div>
+                  <div class="product_title">
+                    <h4>Shirt</h4>
+                  </div>
+                </div>
+                <div class="product_img">
+                  <img src="./images/home1/price_packages/product1.png" alt="">
+                </div>
+                <div class="counting_btn_contain">
+                  <div class="product_count_btn">
+                    <div class="dec_btn">
+                      <span><i class="fa-solid fa-minus"></i></span>
+                    </div>
+                    <input type="text" placeholder="0" value="1">
+                    <div class="inc_btn">
+                      <span><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="product_card_order">
+                <div class="product_details">
+                  <div class="checkbox">
+                    <i class="fa-solid fa-circle-check"></i>
+                  </div>
+                  <div class="product_price">
+                    <span>$1.00 Per Item</span>
+                  </div>
+                  <div class="product_title">
+                    <h4>Shirt</h4>
+                  </div>
+                </div>
+                <div class="product_img">
+                  <img src="./images/home1/price_packages/product1.png" alt="">
+                </div>
+                <div class="counting_btn_contain">
+                  <div class="product_count_btn">
+                    <div class="dec_btn">
+                      <span><i class="fa-solid fa-minus"></i></span>
+                    </div>
+                    <input type="text" placeholder="0" value="1">
+                    <div class="inc_btn">
+                      <span><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           </div>
+           <div class="section_btn">
+             <div class="btn_wrapper_area style_5 mt-30">
+              <a href="checkout.html">Order Now</a>
+             </div>
+
+           </div>
         </div>
-      </div>
-  </section>
+    </div>
+</div>
+
+<div class="modal fade custom-modal-red" id="dryCleaningModal" tabindex="-1" aria-labelledby="dryCleaningModalLabel" aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content p-4">
+          <div class="modal-header">
+                <h5 class="modal-title" id="dryCleaningModalLabel">Dry Cleaning</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+           <div class="row g-4 mt-30">
+            <div class="col-lg-3">
+              <div class="product_card_order">
+                <div class="product_details">
+                  <div class="checkbox">
+                    <i class="fa-solid fa-circle-check"></i>
+                  </div>
+                  <div class="product_price">
+                    <span>$1.00 Per Item</span>
+                  </div>
+                  <div class="product_title">
+                    <h4>Shirt</h4>
+                  </div>
+                </div>
+                <div class="product_img">
+                  <img src="./images/home1/price_packages/product1.png" alt="">
+                </div>
+                <div class="counting_btn_contain">
+                  <div class="product_count_btn">
+                    <div class="dec_btn">
+                      <span><i class="fa-solid fa-minus"></i></span>
+                    </div>
+                    <input type="text" placeholder="0" value="1">
+                    <div class="inc_btn">
+                      <span><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="product_card_order">
+                <div class="product_details">
+                  <div class="checkbox">
+                    <i class="fa-solid fa-circle-check"></i>
+                  </div>
+                  <div class="product_price">
+                    <span>$1.00 Per Item</span>
+                  </div>
+                  <div class="product_title">
+                    <h4>Shirt</h4>
+                  </div>
+                </div>
+                <div class="product_img">
+                  <img src="./images/home1/price_packages/product1.png" alt="">
+                </div>
+                <div class="counting_btn_contain">
+                  <div class="product_count_btn">
+                    <div class="dec_btn">
+                      <span><i class="fa-solid fa-minus"></i></span>
+                    </div>
+                    <input type="text" placeholder="0" value="1">
+                    <div class="inc_btn">
+                      <span><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="product_card_order">
+                <div class="product_details">
+                  <div class="checkbox">
+                    <i class="fa-solid fa-circle-check"></i>
+                  </div>
+                  <div class="product_price">
+                    <span>$1.00 Per Item</span>
+                  </div>
+                  <div class="product_title">
+                    <h4>Shirt</h4>
+                  </div>
+                </div>
+                <div class="product_img">
+                  <img src="./images/home1/price_packages/product1.png" alt="">
+                </div>
+                <div class="counting_btn_contain">
+                  <div class="product_count_btn">
+                    <div class="dec_btn">
+                      <span><i class="fa-solid fa-minus"></i></span>
+                    </div>
+                    <input type="text" placeholder="0" value="1">
+                    <div class="inc_btn">
+                      <span><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="product_card_order">
+                <div class="product_details">
+                  <div class="checkbox">
+                    <i class="fa-solid fa-circle-check"></i>
+                  </div>
+                  <div class="product_price">
+                    <span>$1.00 Per Item</span>
+                  </div>
+                  <div class="product_title">
+                    <h4>Shirt</h4>
+                  </div>
+                </div>
+                <div class="product_img">
+                  <img src="./images/home1/price_packages/product1.png" alt="">
+                </div>
+                <div class="counting_btn_contain">
+                  <div class="product_count_btn">
+                    <div class="dec_btn">
+                      <span><i class="fa-solid fa-minus"></i></span>
+                    </div>
+                    <input type="text" placeholder="0" value="1">
+                    <div class="inc_btn">
+                      <span><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="product_card_order">
+                <div class="product_details">
+                  <div class="checkbox">
+                    <i class="fa-solid fa-circle-check"></i>
+                  </div>
+                  <div class="product_price">
+                    <span>$1.00 Per Item</span>
+                  </div>
+                  <div class="product_title">
+                    <h4>Shirt</h4>
+                  </div>
+                </div>
+                <div class="product_img">
+                  <img src="./images/home1/price_packages/product1.png" alt="">
+                </div>
+                <div class="counting_btn_contain">
+                  <div class="product_count_btn">
+                    <div class="dec_btn">
+                      <span><i class="fa-solid fa-minus"></i></span>
+                    </div>
+                    <input type="text" placeholder="0" value="1">
+                    <div class="inc_btn">
+                      <span><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           </div>
+           <div class="section_btn">
+             <div class="btn_wrapper_area style_5 mt-30">
+              <a href="checkout.html">Order Now</a>
+             </div>
+
+           </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade custom-modal-red" id="shirtServiceModal" tabindex="-1" aria-labelledby="shirtServiceModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content p-4">
+          <div class="modal-header">
+                <h5 class="modal-title" id="dryCleaningModalLabel">Dry Cleaning</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+           <div class="row g-4 mt-30">
+            <div class="col-lg-3">
+              <div class="product_card_order">
+                <div class="product_details">
+                  <div class="checkbox">
+                    <i class="fa-solid fa-circle-check"></i>
+                  </div>
+                  <div class="product_price">
+                    <span>$1.00 Per Item</span>
+                  </div>
+                  <div class="product_title">
+                    <h4>Shirt</h4>
+                  </div>
+                </div>
+                <div class="product_img">
+                  <img src="./images/home1/price_packages/product1.png" alt="">
+                </div>
+                <div class="counting_btn_contain">
+                  <div class="product_count_btn">
+                    <div class="dec_btn">
+                      <span><i class="fa-solid fa-minus"></i></span>
+                    </div>
+                    <input type="text" placeholder="0" value="1">
+                    <div class="inc_btn">
+                      <span><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="product_card_order">
+                <div class="product_details">
+                  <div class="checkbox">
+                    <i class="fa-solid fa-circle-check"></i>
+                  </div>
+                  <div class="product_price">
+                    <span>$1.00 Per Item</span>
+                  </div>
+                  <div class="product_title">
+                    <h4>Shirt</h4>
+                  </div>
+                </div>
+                <div class="product_img">
+                  <img src="./images/home1/price_packages/product1.png" alt="">
+                </div>
+                <div class="counting_btn_contain">
+                  <div class="product_count_btn">
+                    <div class="dec_btn">
+                      <span><i class="fa-solid fa-minus"></i></span>
+                    </div>
+                    <input type="text" placeholder="0" value="1">
+                    <div class="inc_btn">
+                      <span><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="product_card_order">
+                <div class="product_details">
+                  <div class="checkbox">
+                    <i class="fa-solid fa-circle-check"></i>
+                  </div>
+                  <div class="product_price">
+                    <span>$1.00 Per Item</span>
+                  </div>
+                  <div class="product_title">
+                    <h4>Shirt</h4>
+                  </div>
+                </div>
+                <div class="product_img">
+                  <img src="./images/home1/price_packages/product1.png" alt="">
+                </div>
+                <div class="counting_btn_contain">
+                  <div class="product_count_btn">
+                    <div class="dec_btn">
+                      <span><i class="fa-solid fa-minus"></i></span>
+                    </div>
+                    <input type="text" placeholder="0" value="1">
+                    <div class="inc_btn">
+                      <span><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="product_card_order">
+                <div class="product_details">
+                  <div class="checkbox">
+                    <i class="fa-solid fa-circle-check"></i>
+                  </div>
+                  <div class="product_price">
+                    <span>$1.00 Per Item</span>
+                  </div>
+                  <div class="product_title">
+                    <h4>Shirt</h4>
+                  </div>
+                </div>
+                <div class="product_img">
+                  <img src="./images/home1/price_packages/product1.png" alt="">
+                </div>
+                <div class="counting_btn_contain">
+                  <div class="product_count_btn">
+                    <div class="dec_btn">
+                      <span><i class="fa-solid fa-minus"></i></span>
+                    </div>
+                    <input type="text" placeholder="0" value="1">
+                    <div class="inc_btn">
+                      <span><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="product_card_order">
+                <div class="product_details">
+                  <div class="checkbox">
+                    <i class="fa-solid fa-circle-check"></i>
+                  </div>
+                  <div class="product_price">
+                    <span>$1.00 Per Item</span>
+                  </div>
+                  <div class="product_title">
+                    <h4>Shirt</h4>
+                  </div>
+                </div>
+                <div class="product_img">
+                  <img src="./images/home1/price_packages/product1.png" alt="">
+                </div>
+                <div class="counting_btn_contain">
+                  <div class="product_count_btn">
+                    <div class="dec_btn">
+                      <span><i class="fa-solid fa-minus"></i></span>
+                    </div>
+                    <input type="text" placeholder="0" value="1">
+                    <div class="inc_btn">
+                      <span><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="product_card_order">
+                <div class="product_details">
+                  <div class="checkbox">
+                    <i class="fa-solid fa-circle-check"></i>
+                  </div>
+                  <div class="product_price">
+                    <span>$1.00 Per Item</span>
+                  </div>
+                  <div class="product_title">
+                    <h4>Shirt</h4>
+                  </div>
+                </div>
+                <div class="product_img">
+                  <img src="./images/home1/price_packages/product1.png" alt="">
+                </div>
+                <div class="counting_btn_contain">
+                  <div class="product_count_btn">
+                    <div class="dec_btn">
+                      <span><i class="fa-solid fa-minus"></i></span>
+                    </div>
+                    <input type="text" placeholder="0" value="1">
+                    <div class="inc_btn">
+                      <span><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           </div>
+           <div class="section_btn">
+             <div class="btn_wrapper_area style_5 mt-30">
+              <a href="checkout.html">Order Now</a>
+             </div>
+
+           </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade custom-modal-red" id="ironingModal" tabindex="-1" aria-labelledby="ironingModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content p-4">
+          <div class="modal-header">
+                <h5 class="modal-title" id="dryCleaningModalLabel">Dry Cleaning</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+           <div class="row g-4 mt-30">
+            <div class="col-lg-3">
+              <div class="product_card_order">
+                <div class="product_details">
+                  <div class="checkbox">
+                    <i class="fa-solid fa-circle-check"></i>
+                  </div>
+                  <div class="product_price">
+                    <span>$1.00 Per Item</span>
+                  </div>
+                  <div class="product_title">
+                    <h4>Shirt</h4>
+                  </div>
+                </div>
+                <div class="product_img">
+                  <img src="./images/home1/price_packages/product1.png" alt="">
+                </div>
+                <div class="counting_btn_contain">
+                  <div class="product_count_btn">
+                    <div class="dec_btn">
+                      <span><i class="fa-solid fa-minus"></i></span>
+                    </div>
+                    <input type="text" placeholder="0" value="1">
+                    <div class="inc_btn">
+                      <span><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="product_card_order">
+                <div class="product_details">
+                  <div class="checkbox">
+                    <i class="fa-solid fa-circle-check"></i>
+                  </div>
+                  <div class="product_price">
+                    <span>$1.00 Per Item</span>
+                  </div>
+                  <div class="product_title">
+                    <h4>Shirt</h4>
+                  </div>
+                </div>
+                <div class="product_img">
+                  <img src="./images/home1/price_packages/product1.png" alt="">
+                </div>
+                <div class="counting_btn_contain">
+                  <div class="product_count_btn">
+                    <div class="dec_btn">
+                      <span><i class="fa-solid fa-minus"></i></span>
+                    </div>
+                    <input type="text" placeholder="0" value="1">
+                    <div class="inc_btn">
+                      <span><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="product_card_order">
+                <div class="product_details">
+                  <div class="checkbox">
+                    <i class="fa-solid fa-circle-check"></i>
+                  </div>
+                  <div class="product_price">
+                    <span>$1.00 Per Item</span>
+                  </div>
+                  <div class="product_title">
+                    <h4>Shirt</h4>
+                  </div>
+                </div>
+                <div class="product_img">
+                  <img src="./images/home1/price_packages/product1.png" alt="">
+                </div>
+                <div class="counting_btn_contain">
+                  <div class="product_count_btn">
+                    <div class="dec_btn">
+                      <span><i class="fa-solid fa-minus"></i></span>
+                    </div>
+                    <input type="text" placeholder="0" value="1">
+                    <div class="inc_btn">
+                      <span><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="product_card_order">
+                <div class="product_details">
+                  <div class="checkbox">
+                    <i class="fa-solid fa-circle-check"></i>
+                  </div>
+                  <div class="product_price">
+                    <span>$1.00 Per Item</span>
+                  </div>
+                  <div class="product_title">
+                    <h4>Shirt</h4>
+                  </div>
+                </div>
+                <div class="product_img">
+                  <img src="./images/home1/price_packages/product1.png" alt="">
+                </div>
+                <div class="counting_btn_contain">
+                  <div class="product_count_btn">
+                    <div class="dec_btn">
+                      <span><i class="fa-solid fa-minus"></i></span>
+                    </div>
+                    <input type="text" placeholder="0" value="1">
+                    <div class="inc_btn">
+                      <span><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="product_card_order">
+                <div class="product_details">
+                  <div class="checkbox">
+                    <i class="fa-solid fa-circle-check"></i>
+                  </div>
+                  <div class="product_price">
+                    <span>$1.00 Per Item</span>
+                  </div>
+                  <div class="product_title">
+                    <h4>Shirt</h4>
+                  </div>
+                </div>
+                <div class="product_img">
+                  <img src="./images/home1/price_packages/product1.png" alt="">
+                </div>
+                <div class="counting_btn_contain">
+                  <div class="product_count_btn">
+                    <div class="dec_btn">
+                      <span><i class="fa-solid fa-minus"></i></span>
+                    </div>
+                    <input type="text" placeholder="0" value="1">
+                    <div class="inc_btn">
+                      <span><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="product_card_order">
+                <div class="product_details">
+                  <div class="checkbox">
+                    <i class="fa-solid fa-circle-check"></i>
+                  </div>
+                  <div class="product_price">
+                    <span>$1.00 Per Item</span>
+                  </div>
+                  <div class="product_title">
+                    <h4>Shirt</h4>
+                  </div>
+                </div>
+                <div class="product_img">
+                  <img src="./images/home1/price_packages/product1.png" alt="">
+                </div>
+                <div class="counting_btn_contain">
+                  <div class="product_count_btn">
+                    <div class="dec_btn">
+                      <span><i class="fa-solid fa-minus"></i></span>
+                    </div>
+                    <input type="text" placeholder="0" value="1">
+                    <div class="inc_btn">
+                      <span><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="product_card_order">
+                <div class="product_details">
+                  <div class="checkbox">
+                    <i class="fa-solid fa-circle-check"></i>
+                  </div>
+                  <div class="product_price">
+                    <span>$1.00 Per Item</span>
+                  </div>
+                  <div class="product_title">
+                    <h4>Shirt</h4>
+                  </div>
+                </div>
+                <div class="product_img">
+                  <img src="./images/home1/price_packages/product1.png" alt="">
+                </div>
+                <div class="counting_btn_contain">
+                  <div class="product_count_btn">
+                    <div class="dec_btn">
+                      <span><i class="fa-solid fa-minus"></i></span>
+                    </div>
+                    <input type="text" placeholder="0" value="1">
+                    <div class="inc_btn">
+                      <span><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           </div>
+           <div class="section_btn">
+             <div class="btn_wrapper_area style_5 mt-30">
+              <a href="checkout.html">Order Now</a>
+             </div>
+
+           </div>
+        </div>
+    </div>
+</div>
   <!-- Price Packages end -->  
   <!-- price Packages start -->
    <section class="second_price_packages_area pt-150 mt-150">

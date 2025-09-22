@@ -65,18 +65,6 @@
         });
 
     // ---------------------------------
-        // Post Gallery Slider
-        $('.post-gallery').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            autoplay: true,
-            fade: true,
-            autoplaySpeed: 4000,
-            prevArrow: `<span class="left-arrow"><i class="fa-solid fa-arrow-left"></i></span>`,
-            nextArrow: `<span class="right-arrow"><i class="fa-solid fa-arrow-right"></i></span>`,
-            speed: 2000,
-            easing: 'ease-in-out',
-        });
         // Cleaning Slider
         var $cleaningSlider = $('.cleaning_container_area');
         $cleaningSlider.slick({
@@ -338,6 +326,45 @@
         }
         incDec()
 
+        function countProduct(){
+            $('.inc_btn').on('click', function () {
+                let inputField = $(this).siblings('input[type="text"]');
+                let currentValue = parseInt(inputField.val());
+                if (isNaN(currentValue) || currentValue < 0) {
+                    currentValue = 0;
+                }
+
+                inputField.val(currentValue + 1);
+            });
+
+            $('.dec_btn').on('click', function () {
+                let inputField = $(this).siblings('input[type="text"]');
+                let currentValue = parseInt(inputField.val());
+
+                if (isNaN(currentValue) || currentValue <= 0) {
+                    return;
+                }
+
+                inputField.val(currentValue - 1);
+            });
+        }
+        countProduct()
+
+        
+        // $(".product_card").on("click", function () {
+        //     $(this).toggleClass("active");
+        // });
+
+        $(".product_card_order").on("click", function () {
+            $(this).toggleClass("active");
+        });
+
+        $(".product_card_order .dec_btn, .product_card_order .inc_btn, .product_card_order input").on("click", function (event) {
+            event.stopPropagation();
+          
+        });
+
+
         
       // ✅ Magnific Popup Configuration
         $('.playBtn').magnificPopup({
@@ -476,6 +503,24 @@
             speed: 2000,
             easing: 'ease-in-out',
             dotsClass: 'docts-active-collect',
+        });
+
+        //blog post gallery
+        $('.post-gallery').slick({
+            slidesToShow: 1,
+            infinite: true,
+            autoplay: true,
+            draggable: true,
+            arrows: true,
+            slidesToScroll: 1,
+            loop: true,
+            dots: false,
+            speed: 300,
+            rtl: false,
+            prevArrow:
+            "<button type='button' class='post-gallery-btn prev-btn'><i class='fa fa-arrow-left'></i></button>",
+            nextArrow:
+            "<button type='button' class='post-gallery-btn next-btn'><i class='fa fa-arrow-right'></i></button>",
         });
         
     });

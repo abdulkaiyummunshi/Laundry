@@ -9,6 +9,7 @@
   transition: all $time ease;
 }
 
+
 @mixin border-style($width, $height, $color) {
   width: $width;
   height: $height;
@@ -48,6 +49,19 @@
   -o-transform: translate($translateX, $translateY);
 }
 
+// $spacing-values: (0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 100, 150, 200, 500, 1000, 5000);
+
+// @each $value in $spacing-values {
+//   .pt-#{$value} {
+//     padding-top: #{$value}px;
+//   }
+
+//   .mt-#{$value} {
+//     margin-top: #{$value}px;
+//   }
+// }
+
+// for responsive
 
 // Small devices
 @mixin xxs {
